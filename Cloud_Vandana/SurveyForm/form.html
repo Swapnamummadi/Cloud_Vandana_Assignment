@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend><h2>Survey Form</h3></legend>
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="firstName" style="color: blueviolet;">First Name:</label>
+                    <input type="text" id="firstName" style="width: 90%;" name="firstName" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="lastName" style="color: blueviolet;">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" style="width: 90%;" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="dob" style="color: blueviolet;">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" style="width: 90%;" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="country" style="color: blueviolet;">Country:</label>
+                    <select id="country" name="country" style="width: 94%;" required>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Bhootan">Bhootan</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="China">China</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="France">France</option>
+                        <option value="FinLand">FinLand</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="India">India</option>
+                        <option value="Italy">Italy</option>
+                        <option value="IreLand">IreLand</option>
+                        <option value="IceLand">IceLand</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Kenya">kenya</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Others">Others</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Russia">Russia</option>
+                        <option value="SwitzerLand">SwitzerLand</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Venenzuela">Venenzuela</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label style="color: blueviolet;">Gender: </label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="male" name="gender" value="male">
+                        <label for="male" style="font-weight: normal;">Male</label>
+                        <input type="checkbox" id="female" name="gender" value="female">
+                        <label for="female" style="font-weight: normal;">Female</label>
+                        <input type="checkbox" id="other" name="gender" value="other">
+                        <label for="other" style="font-weight: normal;">Other</label>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="profession" style="color: blueviolet;">Profession:</label>
+                    <input type="text" id="profession" name="profession" style="width: 90%;" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" style="color: blueviolet;">Email:</label>
+                    <input type="email" id="email" name="email" style="width: 90%;" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="mobile" style="color: blueviolet;">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" style="width: 90%;" required>
+                </div>
+    
+                <div class="btn-container">
+                    <button type="button" id="submitBtn" onclick="submitForm()">Submit</button>
+                    <button type="button" id="resetBtn" onclick="resetForm()">Reset</button>
+                </div>
+        </fieldset>
+        
+        </form>
+    </div>
+
+    <div class="popup" id="popup">
+        <h3>Survey Form Submission</h3>
+        <div id="popupContent"></div>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>
