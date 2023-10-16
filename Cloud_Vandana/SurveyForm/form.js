@@ -12,14 +12,14 @@ function submitForm() {
         const mobile = document.getElementById('mobile').value;
 
         const popupContent = `
-            <p><strong>First Name:</strong> ${firstName}</p>
-            <p><strong>Last Name:</strong> ${lastName}</p>
-            <p><strong>Date of Birth:</strong> ${dob}</p>
-            <p><strong>Country:</strong> ${country}</p>
-            <p><strong>Gender:</strong> ${gender}</p>
-            <p><strong>Profession:</strong> ${profession}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Mobile Number:</strong> ${mobile}</p>
+            <p><bold>First Name:</strong> ${firstName}</p>
+            <p><bold>Last Name:</strong> ${lastName}</p>
+            <p><bold>Date of Birth:</strong> ${dob}</p>
+            <p><bold>Country:</strong> ${country}</p>
+            <p><bold>Gender:</strong> ${gender}</p>
+            <p><bold>Profession:</strong> ${profession}</p>
+            <p><bold>Email:</strong> ${email}</p>
+            <p><bold>Mobile Number:</strong> ${mobile}</p>
         `;
 
         document.getElementById('popupContent').innerHTML = popupContent;
